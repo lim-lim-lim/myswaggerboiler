@@ -5,6 +5,7 @@ import * as http from 'http';
 import * as swaggerTools from 'swagger-tools';
 import * as jsyaml from 'js-yaml';
 import * as connect from 'connect';
+import * as cors from 'cors';
 
 const app = connect();
 const serverPort = 8080;
@@ -22,6 +23,7 @@ const swaggerDoc = jsyaml.safeLoad(spec);
 
 // Initialize the Swagger middleware
 swaggerTools.initializeMiddleware(swaggerDoc, (middleware) => {
+  app.use(cors());
 
   // Interpret Swagger resources and attach metadata to request - must be first in swagger-tools middleware chain
   app.use(middleware.swaggerMetadata());
