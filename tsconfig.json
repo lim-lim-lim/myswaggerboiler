@@ -12,15 +12,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": false,
     "noImplicitThis": false,
-    "alwaysStrict": true
-    //"allowJs": true
-    //    "outDir":"lib"
-    //    "rootDir": "src",
-    //    "sourceMap": true
+    "alwaysStrict": true,
+    "sourceMap": true
   },
   "include": [
     "./"
-    //    "__tests__/**/*"
   ],
   "exclude": [
     "out",

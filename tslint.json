@@ -21,12 +21,11 @@
         "singleline": "never"
       }
     ],
-    "typedef": [
-      true,
-      "parameter",
-      "arrow-parameter",
-      "property-declaration",
-      "member-variable-declaration"
-    ]
+    "typedef": false,
+    "jsdoc-format": false,
+    "object-literal-key-quotes": false,
+    "quotemark": false,
+    "ordered-imports": false,
+    "no-console": false
   }
 }
