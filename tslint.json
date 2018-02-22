@@ -26,6 +26,8 @@
     "object-literal-key-quotes": false,
     "quotemark": false,
     "ordered-imports": false,
-    "no-console": false
+    "no-console": false,
+    "no-require-imports": false,
+    "no-var-requires": false
   }
 }
